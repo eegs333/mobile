@@ -1,6 +1,6 @@
-MIDlet-1: Primo,,nPrimo.Primo
-MIDlet-Jar-URL: nPrimo.jar
-MIDlet-Name: NumeroPrimo MIDlet Suite
+
+MIDlet-Jar-URL: Test.jar
+MIDlet-Name: Test MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
 MIDlet-Version: 1.0.0
 MicroEdition-Configuration: CLDC-1.1

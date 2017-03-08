@@ -1,0 +1,109 @@
+Metodos:
+  - getSelectdIndex()
+  - getSelectedFlags(boolean [] arreglo)
+  - getString()
+
+
+- Componente TextBox:
+
+TextBox tb = new TextBox("Mensaje:",256,TextField.ANY);
+
+Limitaciones de las constantes:
+
+ANY       cualquier caracter
+NUMERIC   solo numeros
+PHONENUMBER SOLO NUMEROS DE TELEFONO
+EMAILADDR   SOLO DIRECCIONES DE EMAIL
+URL         SOLO URLS
+PASSWORD caracteres no visibles
+
+
+Metodos:
+  - getString()
+  - getChars()
+
+- Form: (contenedor).
+
+Los elementos que se le pueden insertar son:
+
+- StringItem
+TextField
+Gauge
+DateField
+ImageItem
+ChoiceGroup
+
+
+Metodos:
+  - append()
+  - delete ()
+  - insert ()
+  - set ()
+  - size ()
+  - itemStateChanged()
+
+  - Componente StringItem:
+    stringItem si=new StringItem()String titulo, String texto);
+
+    Metodos:
+      -getText()
+      - setText()
+
+
+
+
+
+- Componente TextField:
+  TextField tf = new TextField(String titulo,
+                                  String texto,
+                                  int tamaño,
+                                  int limitacion);
+los metodos son igual(tf);es a los del TextBox.
+f.append(tf);
+
+
+public class Cuadro extends MiDlet implements CommandListener{
+TextField tf;
+
+public Cuadro() {
+tf=new TextField(....);
+f=new form(.....);
+c=new Comand(....);
+c2=
+f.addCommand(c.....);
+f.addCommandListener(.....);
+}
+
+public void commandAction(Command co, dis ){
+if (co==c){
+if (co==c2){
+tf.get....();
+}
+}
+int n=Integer.parseInt
+}
+(tf.get...);
+
+
+
+cuadro magico, con tamaño de cuadro impar
+
+
+
+
+
+a = new Alert("Error:","Dato invalido",null, AlertType.ERROR);
+    d = Display.getDisplay(this);
+    c = new Command("Salir",Command.EXIT,2);
+    f = new Form("primero");
+    si = new StringItem("","Hola Mundo Cruel!");
+    tb = new TextBox("Mensaje: ","blabla",30,TextField.ANY);
+    tf = new TextField("Titulo: ","texto",30,TextField.ANY);
+    String [] s = {"America","Europa","Asia"};
+l=new List ("Continentes:",List.EXCLUSIVE,s,null);
+    f.append(si);
+    f.append(tf);
+   // tb.getString();
+    f.append(tb.getString());
+    f.addCommand(c);
+    f.setCommandListener(this);
